@@ -6,7 +6,7 @@
       <!-- These are here just to show the structure of the list items -->
       <!-- List items should get the class `editing` when editing
       and `completed` when marked as completed-->
-      <li v-for="(item) in todo" :key="item.id" :class="item.completed ? 'completed' : '' ">
+      <li class = "editing" v-for="(item) in todo" :key="item.id" :class="item.completed ? 'completed' : '' ">
         <div class="view">
           <input class="toggle" type="checkbox" v-model="item.completed">
           <label>{{item.content}}</label>
